@@ -7,8 +7,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 var htmlRoutes = require("./routes/htmlRoutes")
+var people = require("./data/people.js")
+var apiRoutes = require("./routes/apiRoutes")
 
 htmlRoutes(app, path)
+apiRoutes(app)
 
 
 
