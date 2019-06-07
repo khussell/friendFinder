@@ -7,6 +7,8 @@ A compatibility-based, Star Wars themed friend finder application
 
 This application is hosted on Heroku. Go to Link: 
 
+https://gentle-ocean-91682.herokuapp.com/
+
 If you would like your own copy of the code you will need to clone this repo, set up your own package.json, instal npm packages express and path.
 
 ## How do you use it?
