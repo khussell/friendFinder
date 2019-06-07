@@ -19,7 +19,6 @@ app.post("/api/people",function(req, res){
 })
 
 
-
 app.listen(PORT, function(){
     console.log("listening")
 })

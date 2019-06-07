@@ -1,26 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Star Wars Friend Finder</title>
-    <link rel="stylesheet" href="../assets/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
+    <base href="/">
+    <!--<link href="../assets/css/reset.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        #mainStyle {
+            background-image: url("https://fsmedia.imgix.net/4d/a0/38/34/9493/4fd2/96b2/7936d5959d45/chewbacca-peter-mayhew-and-han-solo-harrison-ford-in-1977s-star-wars.jpeg?rect=0%2C14%2C1920%2C961&auto=format%2Ccompress&dpr=2&w=650");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+           
+           
+        }
+        .all{
+            background-color: black;
+            opacity: .65;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        .heading{
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #ffd900;
+            letter-spacing: 2px;
+            
+        }
+
+        h5{
+            padding-top: 250px;
+            margin-bottom: 40px;
+        }
+        h3{
+            margin-bottom: 40px;
+        }
+        .btn{
+            margin-top:40px;
+        }
+        .link{
+            text-decoration: none;
+            color:#ffd900;
+            position: relative;
+            z-index: 2;
+            top: 120px;
+        }
+        .link:hover{
+            color:#ffd900;
+        }
+
+       
+    </style>
 </head>
-<body>
-    
-<div class="heading">
-    <h1>May a Friend be with You!</h1>
-    <h3>Answer a few simple questions.</h3>
-    <h3>Then find a Star Wars friend that you are most compatible with!</h3>
-    <a href="/survey"><button type="button" class="btn btn-primary">Survey</button></a>
-</div>
-<div class="footer">
-    <a href="/api/people"><p>Friends Api</p></a>
-    <a href="https://github.com/khussell/friendFinder"><p>Git Hub Repo</p></a>
-</div>
+
+<body id="mainStyle">
+ <div class="all"></div>
+    <div class="heading">
+        <h5>May a Friend be with You!</h5>
+        <h3>Answer a few simple questions.</h3>
+        <h1>Then find a Star Wars friend that you are most compatible with!</h1>
+        <a href="/survey"><button type="button" class="btn btn-outline-warning btn-lg">Survey</button></a>
+    </div>
+    <div class="footer">
+        <a class="link" href="/api/people">
+            <p>Friends Api</p>
+        </a>
+        <a class= "link" href="https://github.com/khussell/friendFinder">
+            <p>Git Hub Repo</p>
+        </a>
+    </div>
 
 
 
@@ -28,10 +100,8 @@
 
 
 
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+
+
 </body>
+
 </html>
