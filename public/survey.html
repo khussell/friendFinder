@@ -22,7 +22,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-        
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 
@@ -198,6 +198,8 @@
 
     <script>
         $("#entry").on("click", function () {
+
+            event.preventDefault()
             var newPerson = {
                 name: $("#nameInput").val().trim(),
                 image: $("#photoLinkInput").val().trim(),
@@ -211,14 +213,50 @@
                 eigth: $("#eigth").val(),
                 ninth: $("#ninth").val(),
                 tenth: $("#tenth").val()
-               
-            }
 
-            $.post("/api/people", newPerson).then(function (data) {
-                console.log(data)
+            }
+            var userArr = [newPerson.first, newPerson.second, newPerson.third, newPerson.fourth, newPerson.fifth, newPerson.sixth, newPerson.seventh, newPerson.eigth, newPerson.ninth, newPerson.tenth]
+            for (var i = 0; i < userArr.length; i++) {
+                userArr[i] = parseInt(userArr[i])
+            }
+            console.log(userArr)
+
+            $.post("/api/people", newPerson)
+
+            $.get("http://localhost:3333/api/people", function (data) {
+                var friend;
+                var friendPic;
+                var lowest = 50;
+                for (var i = 0; i < data.length; i++) {
+                    var friendArr = [data[i].first, data[i].second, data[i].third, data[i].fourth, data[i].fifth, data[i].sixth, data[i].seventh, data[i].eigth, data[i].ninth, data[i].tenth]
+                    for (var j = 0; j < friendArr.length; j++) {
+                        friendArr[j] = parseInt(friendArr[j])
+                    }
+                    
+
+                    var result = 0;
+                    for (var j = 0; j < friendArr.length ; j++){
+                        var subtract = (userArr[j] - friendArr[j])
+                        subtract = Math.abs(subtract)
+                        result += subtract
+                        
+                        
+                    }
+                    if(result< lowest){
+                       friend = data[i].name
+                       friendPic = data[i].image
+                    }
+                }
+                console.log(friend)
+                var newH = $("<h1>").text(friend)
+                var newImage = $("<img>").attr("src", friendPic)
+                $("#modal-body").append(newH,newImage)
             })
 
+
+
         })
+
 
     </script>
 
