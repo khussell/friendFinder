@@ -54,6 +54,105 @@
                     <option value="5">5 (strongly agree)</option>
                 </select>
             </div>
+            <div class="selectQ">
+                <label for="second">Question 2</label>
+                <br>
+                <select id="second">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="selectQ">
+                <label for="third">Question 1</label>
+                <br>
+                <select id="third">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="selectQ">
+                <label for="fourth">Question 1</label>
+                <br>
+                <select id="fourth">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="selectQ">
+                <label for="fifth">Question 1</label>
+                <br>
+                <select id="fifth">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="selectQ">
+                <label for="sixth">Question 1</label>
+                <br>
+                <select id="sixth">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="selectQ">
+                <label for="seventh">Question 1</label>
+                <br>
+                <select id="seventh">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="selectQ">
+                <label for="eigth">Question 1</label>
+                <br>
+                <select id="eigth">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="selectQ">
+                <label for="ninth">Question 1</label>
+                <br>
+                <select id="ninth">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="selectQ">
+                <label for="tenth">Question 1</label>
+                <br>
+                <select id="tenth">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
         </div>
     </form>
 
@@ -102,7 +201,17 @@
             var newPerson = {
                 name: $("#nameInput").val().trim(),
                 image: $("#photoLinkInput").val().trim(),
-                first: $("#first").val()
+                first: $("#first").val(),
+                second: $("#second").val(),
+                third: $("#third").val(),
+                fourth: $("#fourth").val(),
+                fifth: $("#fifth").val(),
+                sixth: $("#sixth").val(),
+                seventh: $("#seventh").val(),
+                eigth: $("#eigth").val(),
+                ninth: $("#ninth").val(),
+                tenth: $("#tenth").val()
+               
             }
 
             $.post("/api/people", newPerson).then(function (data) {
