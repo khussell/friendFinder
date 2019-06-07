@@ -11,7 +11,8 @@ module.exports = [
      seventh: 3,
      eigth: 3,
      ninth: 4,
-     tenth: 2
+     tenth: 2,
+     starWars: true
 },
 {
     name: "Han Solo",
@@ -25,7 +26,8 @@ module.exports = [
     seventh: 1,
     eigth: 4,
     ninth: 2,
-    tenth: 4 
+    tenth: 4,
+    starWars: true
 },
 {
     name: "Chewbacca",
@@ -39,7 +41,8 @@ module.exports = [
     seventh: 2,
     eigth: 5,
     ninth: 3,
-    tenth: 2 
+    tenth: 2,
+    starWars: true
 },
 {
     name: "C-3PO",
@@ -53,7 +56,8 @@ module.exports = [
     seventh: 5,
     eigth: 2,
     ninth: 1,
-    tenth: 4 
+    tenth: 4,
+    starWars: true
 },
 {
     name: "R2-D2",
@@ -67,7 +71,8 @@ module.exports = [
     seventh: 3,
     eigth: 4,
     ninth: 3,
-    tenth: 3 
+    tenth: 3,
+    starWars: true
 },
 {
     name: "Luke Skywalker",
@@ -81,7 +86,8 @@ module.exports = [
     seventh: 4,
     eigth: 4,
     ninth: 4,
-    tenth: 4 
+    tenth: 4,
+    starWars: true
 },
 {
     name: "Yoda",
@@ -95,7 +101,8 @@ module.exports = [
     seventh: 5,
     eigth: 5,
     ninth: 5,
-    tenth: 3 
+    tenth: 3,
+    starWars: true
 },
 {
     name: "Obi-Wan Kenobi",
@@ -109,7 +116,8 @@ module.exports = [
     seventh: 5,
     eigth: 4,
     ninth: 3,
-    tenth: 1 
+    tenth: 1,
+    starWars: true
 },
 {
     name: "Darth Vader",
@@ -123,7 +131,8 @@ module.exports = [
     seventh: 1,
     eigth: 1,
     ninth: 3,
-    tenth: 5 
+    tenth: 5,
+    starWars: true
 },
 {
     name: "Mace Windu",
@@ -137,7 +146,8 @@ module.exports = [
     seventh: 4,
     eigth: 3,
     ninth: 1,
-    tenth: 4 
+    tenth: 4,
+    starWars: true
 },
 {
     name: "Emporer Palpatine",
@@ -151,7 +161,8 @@ module.exports = [
     seventh: 5,
     eigth: 1,
     ninth: 5,
-    tenth: 5 
+    tenth: 5,
+    starWars: true
 },
 {
     name: "Wicket",
@@ -165,7 +176,8 @@ module.exports = [
     seventh: 1,
     eigth: 5,
     ninth: 1,
-    tenth: 4 
+    tenth: 4,
+    starWars: true
 },
 {
     name: "Admiral Ackbar",
@@ -179,6 +191,7 @@ module.exports = [
     seventh: 3,
     eigth: 4,
     ninth: 2,
-    tenth: 3 
-},
+    tenth: 3,
+    starWars: true
+}
 ]

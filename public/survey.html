@@ -2,263 +2,270 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Star Wars Friend Finder</title>
-        <link href="../assets/css/reset.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="../assets/css/style.css">
-    
-    
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-    
-    
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <style>
-                #survey {
-                            background-image: url("https://backgrounddownload.com/wp-content/uploads/2018/09/star-wars-stars-background-2.jpg");
-                            background-size: cover;
-                            background-repeat: no-repeat;
-                            color: #ffd900;
-                            font-family: 'Roboto', sans-serif;
-                           text-align: center;
-                           
-                        }
-                        .all{
-                            background-color: black;
-                            opacity: .65;
-                            height: 1700px;
-                            width: 100%;
-                            position: absolute;
-                            z-index: 1;
-                        }
-                        
-                        h1{
-                            font-size: 60px;
-                            margin: 20px 0;
-                        }
-                        .content{
-                            position: relative;
-                            z-index: 2;
-                        }
-                        label{
-                            letter-spacing: 2px;
-                            font-size: 20px;
-                            
-                            margin-top: 20px;
-                         
-                        }
-                        #nameInput,
-                        #photoLinkInput{
-                            width: 500px;
-                            margin: 0 auto;
-                        }
-                        .btn{
-                            margin-top: 40px;
-                        }
-                        a{
-                            text-align: left;
-                            color:#ffd900;
-                        }
-                        a:hover{
-                            color:#ffd900
-                        }
-                        select{
-                            height: 40px;
-                            margin-bottom: 30px;
-                        }
-                        .pop{
-                            position: relative; 
-                            z-index: 40;
-                        }
-                        
-                       
-                </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars Friend Finder</title>
+    <link href="../assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../assets/css/style.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        #survey {
+            background-image: url("https://backgrounddownload.com/wp-content/uploads/2018/09/star-wars-stars-background-2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #ffd900;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+
+        }
+
+        .all {
+            background-color: black;
+            opacity: .65;
+            height: 1700px;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin: 20px 0;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        label {
+            letter-spacing: 2px;
+            font-size: 20px;
+
+            margin-top: 20px;
+
+        }
+
+        #nameInput,
+        #photoLinkInput {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            margin-top: 40px;
+        }
+
+        a {
+            text-align: left;
+            color: #ffd900;
+        }
+
+        a:hover {
+            color: #ffd900
+        }
+
+        select {
+            height: 40px;
+            margin-bottom: 30px;
+        }
+
+        .pop {
+            position: relative;
+            z-index: 40;
+        }
+    </style>
 </head>
 
 <body id="survey">
-<div class="all"></div>
-<div class="content">
-    <h1>Survey</h1>
-    <h3>Fill out the form below and hit submit to find your Star Wars Best friend!</h3>
-    <form>
-        <div class="form-group">
-            <label for="nameInput">Your Name</label>
-            <input  type="text" class="form-control" id="nameInput">
+    <div class="all"></div>
+    <div class="content">
+        <h1>Survey</h1>
+        <h3>Fill out the form below and hit submit to find your Star Wars Best friend!</h3>
+        <form>
+            <div class="form-group">
+                <label for="nameInput">Your Name</label>
+                <input type="text" class="form-control" id="nameInput">
+            </div>
+            <div class="form-group">
+                <label for="photoLinkInput">Link to your photo</label>
+                <input type="url" class="form-control" id="photoLinkInput">
+            </div>
+
+            <h1>Questions:</h1>
+
+            <div class="selects">
+                <div class="selectQ">
+                    <label for="first">How likely are you to get in a fight with your father?</label>
+                    <br>
+                    <select id="first">
+                        <option value="1">1 (not likely)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (very likely)</option>
+                    </select>
+                </div>
+                <div class="selectQ">
+                    <label for="second">How likely are you to live in a wooded area versus a city?</label>
+                    <br>
+                    <select id="second">
+                        <option value="1">1 (rural and very wooded)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (big city)</option>
+                    </select>
+                </div>
+                <div class="selectQ">
+                    <label for="third">How likely are you to drive when in a car with friends or family?</label>
+                    <br>
+                    <select id="third">
+                        <option value="1">1 (not likely)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (very likely)</option>
+                    </select>
+                </div>
+                <div class="selectQ">
+                    <label for="fourth">How likely are you to take charge in a group project?</label>
+                    <br>
+                    <select id="fourth">
+                        <option value="1">1 (not likely)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (very likely)</option>
+                    </select>
+                </div>
+                <div class="selectQ">
+                    <label for="fifth">How likely are you to sympathize with others' feelings?</label>
+                    <br>
+                    <select id="fifth">
+                        <option value="1">1 (not likely)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (very likely)</option>
+                    </select>
+                </div>
+                <div class="selectQ">
+                    <label for="sixth">How stubborn are you?</label>
+                    <br>
+                    <select id="sixth">
+                        <option value="1">1 (not stubborn)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (very stubborn)</option>
+                    </select>
+                </div>
+                <div class="selectQ">
+                    <label for="seventh">Do you like to share your knowledge with others and teach?</label>
+                    <br>
+                    <select id="seventh">
+                        <option value="1">1 (dis-like)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (like)</option>
+                    </select>
+                </div>
+                <div class="selectQ">
+                    <label for="eigth">What is your favorite of these colors?</label>
+                    <br>
+                    <select id="eigth">
+                        <option value="1">Red</option>
+                        <option value="2">Yellow</option>
+                        <option value="3">Purple</option>
+                        <option value="4">Blue</option>
+                        <option value="5">Green</option>
+                    </select>
+                </div>
+                <div class="selectQ">
+                    <label for="ninth">Do you like change?</label>
+                    <br>
+                    <select id="ninth">
+                        <option value="1">1 (dislike change)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (like change)</option>
+                    </select>
+                </div>
+                <div class="selectQ">
+                    <label for="tenth">Is your mood usually more calm or excited?</label>
+                    <br>
+                    <select id="tenth">
+                        <option value="1">1 (calm)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (excited)</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+
+
+        <!-- Button trigger modal -->
+        <button id="entry" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#exampleModal">
+            Submit
+        </button>
+
+
+
+        <div class="footer">
+            <a href="/api/people">
+                <p>Friends Api</p>
+            </a>
+            <a href="https://github.com/khussell/friendFinder">
+                <p>Git Hub Repo</p>
+            </a>
         </div>
-        <div class="form-group">
-            <label for="photoLinkInput">Link to your photo</label>
-            <input  type="url" class="form-control" id="photoLinkInput">
-        </div>
 
-        <h1>Questions:</h1>
-
-        <div class="selects">
-            <div class="selectQ">
-                <label for="first">How likely are you to get in a fight with your father?</label>
-                <br>
-                <select id="first">
-                    <option value="1">1 (not likely)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (very likely)</option>
-                </select>
-            </div>
-            <div class="selectQ">
-                <label for="second">How likely are you to live in a wooded area versus a city?</label>
-                <br>
-                <select id="second">
-                    <option value="1">1 (rural and very wooded)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (big city)</option>
-                </select>
-            </div>
-            <div class="selectQ">
-                <label for="third">How likely are you to drive when in a car with friends or family?</label>
-                <br>
-                <select id="third">
-                    <option value="1">1 (not likely)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (very likely)</option>
-                </select>
-            </div>
-            <div class="selectQ">
-                <label for="fourth">How likely are you to take charge in a group project?</label>
-                <br>
-                <select id="fourth">
-                    <option value="1">1 (not likely)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (very likely)</option>
-                </select>
-            </div>
-            <div class="selectQ">
-                <label for="fifth">How likely are you to sympathize with others' feelings?</label>
-                <br>
-                <select id="fifth">
-                    <option value="1">1 (not likely)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (very likely)</option>
-                </select>
-            </div>
-            <div class="selectQ">
-                <label for="sixth">How stubborn are you?</label>
-                <br>
-                <select id="sixth">
-                    <option value="1">1 (not stubborn)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (very stubborn)</option>
-                </select>
-            </div>
-            <div class="selectQ">
-                <label for="seventh">Do you like to share your knowledge with others and teach?</label>
-                <br>
-                <select id="seventh">
-                    <option value="1">1 (dis-like)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (like)</option>
-                </select>
-            </div>
-            <div class="selectQ">
-                <label for="eigth">What is your favorite of these colors?</label>
-                <br>
-                <select id="eigth">
-                    <option value="1">Red</option>
-                    <option value="2">Yellow</option>
-                    <option value="3">Purple</option>
-                    <option value="4">Blue</option>
-                    <option value="5">Green</option>
-                </select>
-            </div>
-            <div class="selectQ">
-                <label for="ninth">Do you like change?</label>
-                <br>
-                <select id="ninth">
-                    <option value="1">1 (dislike change)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (like change)</option>
-                </select>
-            </div>
-            <div class="selectQ">
-                <label for="tenth">Is your mood usually more calm or excited?</label>
-                <br>
-                <select id="tenth">
-                    <option value="1">1 (calm)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (excited)</option>
-                </select>
-            </div>
-        </div>
-    </form>
-
-
-
-    <!-- Button trigger modal -->
-    <button id="entry" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#exampleModal">
-        Submit
-    </button>
-
-
-
-    <div class="footer">
-        <a href="/api/people">
-            <p>Friends Api</p>
-        </a>
-        <a href="https://github.com/khussell/friendFinder">
-            <p>Git Hub Repo</p>
-        </a>
     </div>
 
-</div>
-
     <!-- Modal -->
-    <div class="pop">
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Your Star Wars best friend is:</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                        </div>
-                        <div class="modal-footer">
-                            <a href="/"><button type="button" class="btn btn-secondary" id="close"
-                                    data-dismiss="modal">Close</button></a>
-                        </div>
-                    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title words" id="exampleModalLabel">Your Star Wars best friend is:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <a href="/"><button type="button" class="btn btn-secondary" id="close"
+                            data-dismiss="modal">Close</button></a>
                 </div>
             </div>
         </div>
+    </div>
+
     <script>
         $("#entry").on("click", function () {
 
@@ -275,7 +282,8 @@
                 seventh: $("#seventh").val(),
                 eigth: $("#eigth").val(),
                 ninth: $("#ninth").val(),
-                tenth: $("#tenth").val()
+                tenth: $("#tenth").val(),
+                starWars: false
 
             }
             var userArr = [newPerson.first, newPerson.second, newPerson.third, newPerson.fourth, newPerson.fifth, newPerson.sixth, newPerson.seventh, newPerson.eigth, newPerson.ninth, newPerson.tenth]
@@ -289,6 +297,7 @@
             $.get("http://localhost:3333/api/people", function (data) {
                 var friend;
                 var friendPic;
+                var starWars;
                 var lowest = 50;
                 for (var i = 0; i < data.length; i++) {
                     if (data[i].name === newPerson.name) {
@@ -312,12 +321,21 @@
                             lowest = result
                             friend = data[i].name
                             friendPic = data[i].image
+                            starWars = data[i].starWars
                         }
                     }
                 }
                 console.log(friend)
+                console.log(starWars)
+                if (starWars === "false") {
+                    console.log("we are in")
+                    var text = "Sorry you weren't cool enough to match a Star Wars character, but you did match this person:"
+
+                    $(".modal-header").html(text)
+                }
                 $(".modal-body").empty()
                 var newDiv = $("<div>")
+
                 var newH = $("<h1>").text(friend)
                 var newImage = $("<img>").attr("src", friendPic)
                     .attr("height", "200px")
@@ -331,17 +349,17 @@
 
         $("#close").on("click", function () {
             $("#nameInput").val("")
-                $("#photoLinkInput").val("")
-                $("#first").val("")
-                $("#second").val("")
-                $("#third").val("")
-                $("#fourth").val("")
-                $("#fifth").val("")
-                $("#sixth").val("")
-                $("#seventh").val("")
-                $("#eigth").val("")
-                $("#ninth").val("")
-                $("#tenth").val("")
+            $("#photoLinkInput").val("")
+            $("#first").val(1)
+            $("#second").val(1)
+            $("#third").val(1)
+            $("#fourth").val(1)
+            $("#fifth").val(1)
+            $("#sixth").val(1)
+            $("#seventh").val(1)
+            $("#eigth").val(1)
+            $("#ninth").val(1)
+            $("#tenth").val(1)
         })
 
 
