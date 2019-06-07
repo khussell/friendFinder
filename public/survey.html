@@ -324,6 +324,9 @@
                 }
                 console.log(friend)
                 console.log(starWars)
+                if(lowest === 0 && starWars === true){
+                    $(".modal-header").html("Wow an exact match!!! Here is your Star Wars best friend:")
+                }
                 if (starWars === "false") {
                     console.log("we are in")
                     var text = "Sorry you weren't cool enough to match a Star Wars character, but you did match this person:"
