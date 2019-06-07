@@ -13,12 +13,12 @@ var apiRoutes = require("./routes/apiRoutes")
 htmlRoutes(app, path)
 apiRoutes(app)
 
-app.post("/api/people",function(req, res){
+app.post("/api/people", function (req, res) {
     var newPerson = req.body
     people.push(newPerson)
 })
 
 
-app.listen(PORT, function(){
+app.listen(PORT, function () {
     console.log("listening")
 })
