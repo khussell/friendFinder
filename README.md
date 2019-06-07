@@ -15,4 +15,4 @@ Go to the link above and click on the survey button. You will be taken to a page
 
 ## What was used to make this application?
 
-This app was made with HTML, CSS, JavaScript/JQuery, Node, NPM packages Express and Path.
+This app was made with HTML, CSS, Bootstrap, JavaScript/JQuery, Node, NPM packages Express and Path.
